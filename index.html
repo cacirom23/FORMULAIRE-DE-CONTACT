@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/filee.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="pseudo">Votre Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+
+        <label for="password">Votre Mot de passe</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Objet du message*</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Votre message*</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+        <fieldset>
+            <legend>Niveau d'urgence</legend>
+            <input type="radio" id="urgent" name="urgency" value="urgent" required>
+            <label for="urgent">Urgent</label>
+            <input type="radio" id="normal" name="urgency" value="normal">
+            <label for="normal">Normal</label>
+        </fieldset>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">J'ai lu et j'accepte la politique de confidentialité du site.</label>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
